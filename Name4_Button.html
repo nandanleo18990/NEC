@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<body >
+<div class= "wrapper">
+
+<input type="button" id="speed_button" value="Demo Speed 2X" onclick="thop_main()" > 
+
+
+<input type="button" value="Reset Demo"  onclick="refresh1()" >
+
+
+
+<input type="button" id="toggle_button"value="Hide ETA" onclick="change_display()" />
+</div>
+
+
+<style>
+
+
+body{
+
+background-color : lightgrey;
+
+}
+#toggle{
+
+float:right;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+</style>
+
+<script>
+
+
+function refresh1(){
+window.top.location.reload();
+
+};
+
+
+ 
+//-------------------------------Nandan Changes speed in 1 and 3 (90 and 180)--------------------//
+function thop_main(){
+
+
+top.frames.name1.thop();
+top.frames.name2.thop2();
+changespeed_display();
+
+};
+//-------------------------------Nandan Hides and displays the textarea-------------------//
+
+function display_hide(){
+
+
+top.frames.name1.toggle();
+top.frames.name2.toggleq();
+
+
+};
+
+//------------ change spedd function----------------------//
+function changespeed_display() {
+                 var elem = document.getElementById("speed_button");
+                if (elem.value=="Demo Speed 2X")
+                    { 
+                        elem.value = "Demo Speed 1X";
+                    }
+                else
+                 {
+                     elem.value = "Demo Speed 2X";
+                 }
+            };
+function changetext() {
+                 var elem = document.getElementById("toggle_button");
+                if (elem.value=="Hide ETA")
+                    { 
+                        elem.value = "Display ETA";
+                    }
+                else
+                 {
+                     elem.value = "Hide ETA";
+                 }
+            };
+			
+			function display(){
+			
+			
+			
+						
+			}
+			function change_display(){
+			
+			
+			display_hide();
+			changetext() ;
+			
+			}
+ </script>
+
+</body>
+
+</script>
+
+</html>

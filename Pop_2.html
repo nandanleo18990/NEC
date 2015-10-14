@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 1000px;
+    height: 1000px;
+ 
+    text-align: center;
+}
+		body{
+						 background-image: url(map945.jpg);
+						
+					     height: 100%;
+						 width :100%;
+						 background-repeat: no-repeat;
+						 overflow:hidden;
+					 }
+</style>
+</head>
+<body>
+
+
+
+<div onclick="showCoords(event)"><p id="demo"></p></div>
+
+
+
+<script>
+function showCoords(event) {
+    var cX = event.clientX;
+    var sX = event.screenX;
+    var cY = event.clientY;
+    var sY = event.screenY;
+    var coords1 = "client - X: " + cX + ", Y coords: " + cY;
+    var coords2 = "screen - X: " + sX + ", Y coords: " + sY;
+    document.getElementById("demo").innerHTML = coords1 + "<br>" + coords2;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<body>
+<div id="testDiv" style="background-color:yellow">
+
+
+</div>
+<span class="c" id="5"></span>
+
+</body>
+<script type="text/javascript">
+
+ $(document).ready(function() {
+    $("#testDiv").dialog({
+        height: 100,
+		width: 50,
+        modal: true,
+        open: function(event, ui){
+           setTimeout("$('#testDiv').dialog('close')",5000);
+        }
+    });
+ });
+ 
+function c(){
+	var n=$('.c').attr('id');
+    var c=n;
+	$('.c').text(c);
+	setInterval(function(){
+		c--;
+		if(c>=0){
+			$('.c').text(c);
+		}
+        if(c==0){
+            $('.c').text(n);
+        }
+	},1000);
+}
+
+// Start
+c();
+
+// Loop
+setTimeout(function(){
+	c();
+},5000);
+
+</script>
+</head>
+
+</html>

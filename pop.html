@@ -1,0 +1,91 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-latest.js"></script> 
+
+</head>
+<div id="fbpopupdata">
+
+<div class="fbpopupdatadata">
+</div>
+<div id="fbpopupdatafooter"><span>10</span> Seconds<br/>
+
+<style>
+
+
+
+#fbpopupdata {
+    background-color: none;
+    position:absolute;
+    z-index: 9999;
+    display: none;
+    padding: 0;
+	scroll : none ;
+    border: 10px solid #446c95;
+
+
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    width: 100px;
+    height: 100;
+    overflow: auto;
+    left:50% !important;
+    margin-left:-220px;
+    margin-top:auto;
+    box-shadow: inset 0 1px rgba(0,0,0,0.1);
+} 
+
+#fbpopupdata span {
+    font-size: 20px;
+    font-weight: normal ;
+} 
+
+
+
+.fbpopupdatadata {
+    font-size: 12px !important;
+    font-weight: normal !important;
+    height: 275px !important;
+    padding: 1px !important;
+    background: #fff !important;
+    border-bottom: 0px solid #ddd;
+    overflow: show !important;
+} 
+
+ 
+
+#fbpopupdatafooter p {
+    text-align: right;
+    font-size:12px;
+} 
+
+
+</style>
+<body>
+<script>
+jQuery(document).ready(function() {
+function fbpopupdatafunc()  {
+var sec = 10
+var timer = setInterval(function() {
+$("#fbpopupdatafooter span").text(sec--);
+if (sec == 0) {
+$("#fbpopupdata").fadeOut("slow");
+
+}
+},1000);
+//var fbpopupdatawindow = jQuery(window).height();
+var fbpopupdatadiv = jQuery("#fbpopupdata").height();
+var fbpopupdatatop = jQuery(window).scrollTop();
+jQuery("#fbpopupdata").css({"top":fbpopupdatatop});}
+jQuery(window).fadeIn(fbpopupdatafunc).resize(fbpopupdatafunc)
+
+var fbpopupdataleft = 500;
+
+jQuery("#fbpopupdata").animate({opacity: "1", left: "0" , left:  fbpopupdataleft}, 0).show();
+jQuery("#fbpopupdataclose").click(function() {
+jQuery("#fbpopupdata").animate({opacity: "0", left: "-5000000"}, 1000).show();});}); 
+
+
+</script>
+</body>
+<html>

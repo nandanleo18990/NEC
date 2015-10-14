@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<html>
+<head>
+<script type="text/javascript" src="jquery-min.js"></script> 
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="canvasjs.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel='stylesheet' href='style.css'>
+</head>
+
+<body >
+
+		<div id="append"></div>
+		<div id="append1"></div>
+		<div id="append2"></div>
+		<div id="append3"></div>
+		<div id="append4"></div>
+		<div id="append5"></div>
+		<div id="append6"></div>
+		<div id="append7"></div>
+		<div id="container"></div>
+		<div id="result1"></div>
+		<div id="result2"></div>
+		<div id="result3"></div>
+		<div id="result4"></div>
+		<div id="result5"></div>
+		<div id="result6"></div>
+		<div id="result7"></div>
+		<div id="result8"></div>
+	
+
+
+
+<style> 
+	#reload{
+
+
+	position: absolute;
+	right:    0;
+	bottom:   60;
+
+	}
+#append {
+  
+				position: absolute;
+				left:370px; 
+				top:770px;
+				draggable: true;
+				border-radius: 50%;
+				border: 2px solid;
+				background-color: orange;
+				text-align: center;
+				padding:.5%;
+				draggable : true;
+			width: 14px;
+				height: 14px;
+			   -webkit-animation-name: example; 
+			     -webkit-animation-fill-mode: forwards;
+			  
+			-webkit-animation-duration : 180s;
+
+			
+			-webkit-transition-timing-function: ease-in-out;
+
+				}
+		#append1 {
+  
+				left:370px; 
+				top:770px;
+				position: absolute;
+				
+				border-radius: 50%;
+				border: 2px solid;
+				background-color: red;
+				text-align: center;
+				padding:.5%;
+				height: 14px;
+			 width: 14px;
+			   -webkit-animation-name: example1; 
+			  
+			-webkit-animation-duration : 180s;
+			  -webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay : 15s;  
+			
+			-webkit-transition-timing-function: ease-in-out;
+			}
+	#append2 {
+  position: absolute;
+				left:370px; 
+				top:770px;
+				draggable: true;
+				border-radius: 50%;
+				border: 2px solid;
+				background-color: purple;
+				text-align: center;
+				padding:.5%;
+				draggable : true;
+				width: 14px;
+				height: 14px;
+			   -webkit-animation-name: example2; 
+			  -webkit-animation-delay : 30s;  
+			-webkit-animation-duration : 180s;
+			  -webkit-animation-fill-mode: forwards;
+
+			
+			-webkit-transition-timing-function: ease-in-out;
+
+				}
+				
+				#append3 {
+  
+				position: absolute;
+				left:370px; 
+				top:770px;
+				draggable: true;
+				border-radius: 50%;
+				border: 2px solid;
+				background-color: green;
+				text-align: center;
+				padding:.5%;
+				draggable : true;
+				width: 14px;
+				height: 14px;
+			   -webkit-animation-name: example3; 
+			  
+			-webkit-animation-duration : 180s;
+				-webkit-animation-delay : 45s;
+				  -webkit-animation-fill-mode: forwards;
+			
+			-webkit-transition-timing-function: ease-in-out;
+				}
+				
+					#append4 {
+  
+				position: absolute;
+				left:370px; 
+				top:770px;
+				draggable: true;
+				border-radius: 50%;
+				border: 2px solid;
+				background-color: yellow;
+				text-align: center;
+				padding:.5%;
+				draggable : true;
+				width: 14px;
+				height: 14px;
+			   -webkit-animation-name: example4; 
+			  
+			-webkit-animation-duration : 180s;
+				-webkit-animation-delay : 57s;
+				  -webkit-animation-fill-mode: forwards;
+	
+			-webkit-transition-timing-function: ease-in-out;
+				}
+				
+					#append5 {
+  
+				position: absolute;
+				left:370px; 
+				top:770px;
+				draggable: true;
+				border-radius: 50%;
+				border: 2px solid;
+				background-color: brown;
+				text-align: center;
+				padding:.5%;
+				draggable : true;
+				width: 14px;
+				height: 14px;
+			   -webkit-animation-name: example5; 
+			  
+			-webkit-animation-duration : 180s;
+			  -webkit-animation-fill-mode: forwards;
+				-webkit-animation-delay : 74s;
+		
+			-webkit-transition-timing-function: ease-in-out;
+				}
+				
+					#append6 {
+  
+				position: absolute;
+				left:370px; 
+				top:770px;
+				draggable: true;
+				border-radius: 50%;
+				border: 2px solid;
+				background-color: Blue;
+				text-align: center;
+				padding:.5%;
+				draggable : true;
+				width: 14px;
+				height: 14px;
+			   -webkit-animation-name: example6; 
+			     -webkit-animation-fill-mode: forwards;
+			  
+			-webkit-animation-duration : 180s;
+				-webkit-animation-delay : 89s;
+			
+			-webkit-transition-timing-function: ease-in-out;
+				}
+				
+				
+				
+		#append7 {
+  
+				position: absolute;
+				left:370px; 
+				top:770px;
+				draggable: true;
+				border-radius: 50%;
+				border: 2px solid;
+				background-color: grey;
+				text-align: center;
+				padding:.5%;
+				draggable : true;
+				width: 14px;
+				height: 14px;
+			   -webkit-animation-name: example6; 
+			  
+			-webkit-animation-duration : 180s;
+			  -webkit-animation-fill-mode: forwards;
+				-webkit-animation-delay : 100s;
+		
+			-webkit-transition-timing-function: ease-in-out;
+				}
+					
+@-webkit-keyframes example {
+
+
+						  from { left:370px; top:770px;}
+						  3%   { left:430px; top:820px;  }  
+					      8%  { left:479px; top:740px; } 
+						  14%  { left:580px; top:740px; }
+						   20%  { left:550px; top:630px; }						   
+						   25%  { left:500px; top:640px; } 
+						   30%  { left:440px; top:685px; }
+						   35%  { left:385px;            }
+						   40%  { left:390px; top:480px; } 
+							   
+						 45% {    left: 468px; top:470px; }						   
+						   55% { left:450px;  top:420px; }					   
+						     65% { left:370px;  top:390px; } 
+													 
+							 75% { left:374px;  top:155px; }							 
+							  80% { left:370px;  top:20px; }
+							  90% { left:150px;  top:20px; }					   
+							    95% {   left:145px; top:80px; }  							   
+							   to { left:130px;  top:180px;  }
+						   
+						  }
+						   
+							
+							
+@-webkit-keyframes example1 {
+
+
+							  from { left:370px; top:770px;}
+						  3%   { left:430px; top:820px;  }  
+					      8%  { left:479px; top:740px; } 
+						  14%  { left:580px; top:740px; }
+						   20%  { left:550px; top:630px; }						   
+						   25%  { left:500px; top:640px; } 
+						   30%  { left:440px; top:685px; }
+						   35%  { left:385px;            }
+						   40%  { left:390px; top:480px; } 
+							   
+						 45% {    left: 468px; top:470px; }						   
+						   55% { left:450px;  top:420px; }					   
+						     65% { left:370px;  top:390px; } 
+													 
+							 75% { left:374px;  top:155px; }							 
+							  80% { left:370px;  top:20px; }
+							  90% { left:150px;  top:20px; }					   
+							    95% {   left:145px;  top:80px;      }  							   
+							   to { left:130px;  top:180px;  }
+						   
+						  }
+							
+							
+@-webkit-keyframes example2 {
+
+
+						  from { left:370px; top:770px;}
+						  3%   { left:430px; top:820px;  }  
+					      8%  { left:479px; top:740px; } 
+						  14%  { left:580px; top:740px; }
+						   20%  { left:550px; top:630px; }						   
+						   25%  { left:500px; top:640px; } 
+						   30%  { left:440px; top:685px; }
+						   35%  { left:385px;            }
+						   40%  { left:390px; top:480px; } 
+							   
+						 45% {    left: 468px; top:470px; }						   
+						   55% { left:450px;  top:420px; }					   
+						     65% { left:370px;  top:390px; } 
+													 
+							 75% { left:374px;  top:155px; }							 
+							  80% { left:370px;  top:20px; }
+							  90% { left:150px;  top:20px; }					   
+							    95% {   left:145px;  top:80px;          }  							   
+							   to { left:130px;  top:180px;  }
+						   
+						  }
+							
+@-webkit-keyframes example3 {
+
+
+					
+						  from { left:370px; top:770px;}
+						  3%   { left:430px; top:820px;  }  
+					      8%  { left:479px; top:740px; } 
+						  14%  { left:580px; top:740px; }
+						   20%  { left:550px; top:630px; }						   
+						   25%  { left:500px; top:640px; } 
+						   30%  { left:440px; top:685px; }
+						   35%  { left:385px;            }
+						   40%  { left:390px; top:480px; } 
+							   
+						 45% {    left: 468px; top:470px; }						   
+						   55% { left:450px;  top:420px; }					   
+						     65% { left:370px;  top:390px; } 
+													 
+							 75% { left:374px;  top:155px; }							 
+							  80% { left:370px;  top:20px; }
+							  90% { left:150px;  top:20px; }					   
+							    95% {   left:145px;  top:80px;          }  							   
+							   to { left:130px;  top:180px;  }
+						   
+						  }
+						  
+						  @-webkit-keyframes example4 {
+
+
+						  from { left:370px; top:770px;}
+						  3%   { left:430px; top:820px;  }  
+					      8%  { left:479px; top:740px; } 
+						  14%  { left:580px; top:740px; }
+						   20%  { left:550px; top:630px; }						   
+						   25%  { left:500px; top:640px; } 
+						   30%  { left:440px; top:685px; }
+						   35%  { left:385px;            }
+						   40%  { left:390px; top:480px; } 
+							   
+						 45% {    left: 468px; top:470px; }						   
+						   55% { left:450px;  top:420px; }					   
+						     65% { left:370px;  top:390px; } 
+													 
+							 75% { left:374px;  top:155px; }							 
+							  80% { left:370px;  top:20px; }
+							  90% { left:150px;  top:20px; }					   
+							    95% {   left:145px; top:80px; }  							   
+							   to { left:130px;  top:180px;  }
+						   
+						  }
+						  
+						  @-webkit-keyframes example5 {
+
+
+						  from { left:370px; top:770px;}
+						  3%   { left:430px; top:820px;  }  
+					      8%  { left:479px; top:740px; } 
+						  14%  { left:580px; top:740px; }
+						   20%  { left:550px; top:630px; }						   
+						   25%  { left:500px; top:640px; } 
+						   30%  { left:440px; top:685px; }
+						   35%  { left:385px;            }
+						   40%  { left:390px; top:480px; } 
+							   
+						 45% {    left: 468px; top:470px; }						   
+						   55% { left:450px;  top:420px; }					   
+						     65% { left:370px;  top:390px; } 
+													 
+							 75% { left:374px;  top:155px; }							 
+							  80% { left:370px;  top:20px; }
+							  90% { left:150px;  top:20px; }					   
+							    95% {   left:145px; top:80px; }  							   
+							   to { left:130px;  top:180px;  }
+						   
+						  }
+						  
+						  	 @-webkit-keyframes example6 {
+
+
+						  from { left:370px; top:770px;}
+						  3%   { left:430px; top:820px;  }  
+					      8%  { left:479px; top:740px; } 
+						  14%  { left:580px; top:740px; }
+						   20%  { left:550px; top:630px; }						   
+						   25%  { left:500px; top:640px; } 
+						   30%  { left:440px; top:685px; }
+						   35%  { left:385px;            }
+						   40%  { left:390px; top:480px; } 
+							   
+						 45% {    left: 468px; top:470px; }						   
+						   55% { left:450px;  top:420px; }					   
+						     65% { left:370px;  top:390px; } 
+													 
+							 75% { left:374px;  top:155px; }							 
+							  80% { left:370px;  top:20px; }
+							  90% { left:150px;  top:20px; }					   
+							    95% {   left:145px; top:80px; }  							   
+							   to { left:130px;  top:180px;  }
+						   
+						  }
+						  
+						  						  
+	 @-webkit-keyframes example7 {
+
+
+						  from { left:370px; top:770px;}
+						  3%   { left:430px; top:820px;  }  
+					      8%  { left:479px; top:740px; } 
+						  14%  { left:580px; top:740px; }
+						   20%  { left:550px; top:630px; }						   
+						   25%  { left:500px; top:640px; } 
+						   30%  { left:440px; top:685px; }
+						   35%  { left:385px;            }
+						   40%  { left:390px; top:480px; } 
+							   
+						 45% {    left: 468px; top:470px; }						   
+						   55% { left:450px;  top:420px; }					   
+						     65% { left:370px;  top:390px; } 
+													 
+							 75% { left:374px;  top:155px; }							 
+							  80% { left:370px;  top:20px; }
+							  90% { left:150px;  top:20px; }					   
+							    95% {   left:145px; top:80px; }  							   
+							   to { left:130px;  top:180px;  }
+						   
+						  }
+						  
+						  
+						body{
+						 background-image: url(map945.jpg);
+						
+					     height: 100%;
+						 width :100%;
+						 background-repeat: no-repeat;
+						 overflow:hidden;
+					 }
+					
+					 
+					 
+
+
+#textarea1{
+position: absolute;
+left:420px;
+top:150px; 
+width: 100px;
+height: 100px;
+
+}
+
+#textarea2{
+position: absolute;
+left:478px; 
+top:345px;
+width: 100px;
+height: 100px;
+
+
+}
+
+#textarea3{
+position: absolute;
+
+left:24px; 
+top:70px;
+width: 100px;
+height: 100px;
+
+
+}
+
+#chartContainer{
+position: absolute;
+left:    10%;
+bottom:  4%;
+}
+
+
+
+</style>
+
+
+
+<script>
+
+var bus1 = document.getElementById('append'),
+	bus2 = document.getElementById('append1'),
+	bus3 = document.getElementById('append2'),
+	bus4 = document.getElementById('append3');
+	bus5 = document.getElementById('append4');
+	bus6 = document.getElementById('append5');
+	bus7 = document.getElementById('append6');
+	bus8 = document.getElementById('append7');
+
+
+
+var percent_timing=1755;
+
+var temp_bus1;
+var temp_bus2;
+var temp_bus3;
+var temp_bus4;
+var temp_bus5;
+var temp_bus6;
+	
+	bus2.addEventListener("animationstart", time_bus2, false);
+	//bus2.addEventListener("animationend", time_bus2, false);
+	//bus2.addEventListener("animationiteration", time_bus2, false);
+	
+	bus1.addEventListener("animationstart", time_bus1, false);
+	//bus1.addEventListener("animationend", time_bus1, false);
+	//bus1.addEventListener("animationiteration", time_bus1, false);
+	
+	bus3.addEventListener("animationstart", time_bus3, false);
+	//bus3.addEventListener("animationend", time_bus3, false);
+	//bus3.addEventListener("animationiteration", time_bus3, false);
+	
+	bus4.addEventListener("animationstart", time_bus4, false);
+	//bus4.addEventListener("animationend", time_bus4, false);
+	//bus4.addEventListener("animationiteration", time_bus4, false);
+	bus5.addEventListener("animationstart", time_bus5, false);
+	
+	
+	bus6.addEventListener("animationstart", time_bus6, false);
+	bus7.addEventListener("animationstart", time_bus7, false);
+	bus8.addEventListener("animationstart", time_bus8, false);
+
+var result2 = document.getElementById('result2'),
+    // Current position of circle around its path
+    // in percent in reference to the original
+    totalCurrentPercent = 0,
+    // Percent of circle around its path in
+    // percent in reference to the latest origin
+    currentPercent = 0;
+	
+	
+var result1 = document.getElementById('result1'),
+    // Current position of circle around its path
+    // in percent in reference to the original
+    totalCurrentPercent1 = 0,
+    // Percent of circle around its path in
+    // percent in reference to the latest origin
+    currentPercent1 = 0;
+
+
+var result3 = document.getElementById('result3'),
+    // Current position of circle around its path
+    // in percent in reference to the original
+    totalCurrentPercent3 = 0,
+    // Percent of circle around its path in
+    // percent in reference to the latest origin
+    currentPercent3 = 0;
+	
+var result4 = document.getElementById('result4'),
+    // Current position of circle around its path
+    // in percent in reference to the original
+    totalCurrentPercent4 = 0,
+    // Percent of circle around its path in
+    // percent in reference to the latest origin
+    currentPercent4 = 0;
+var result5 = document.getElementById('result5'),
+    // Current position of circle around its path
+    // in percent in reference to the original
+    totalCurrentPercent5 = 0,
+    // Percent of circle around its path in
+    // percent in reference to the latest origin
+    currentPercent5 = 0;
+
+var result6 = document.getElementById('result6'),
+    // Current position of circle around its path
+    // in percent in reference to the original
+    totalCurrentPercent6 = 0,
+    // Percent of circle around its path in
+    // percent in reference to the latest origin
+    currentPercent6 = 0;
+
+var result7 = document.getElementById('result7'),
+    // Current position of circle around its path
+    // in percent in reference to the original
+    totalCurrentPercent7 = 0,
+    // Percent of circle around its path in
+    // percent in reference to the latest origin
+    currentPercent7 = 0;
+
+var result8 = document.getElementById('result8'),
+    // Current position of circle around its path
+    // in percent in reference to the original
+    totalCurrentPercent8 = 0,
+    // Percent of circle around its path in
+    // percent in reference to the latest origin
+    currentPercent8 = 0;
+
+
+
+	
+function time_bus2(bus2){
+	var showPercent = window.setInterval(function() {
+		
+		if(currentPercent < 100)
+		{
+			currentPercent += 1;
+		}
+		else {
+			setTimeout(function(){ 
+				currentPercent = 0;
+				},3000);
+		}
+	  
+	  result2.innerHTML = currentPercent;
+	}, percent_timing); // Runs at a rate based on the animation's
+			// duration (milliseconds / 100)
+}
+	
+
+function time_bus1(bus1){
+	var showPercent1 = window.setInterval(function() {
+		
+		if(currentPercent1 < 100)
+		{
+			currentPercent1 += 1;
+		}
+		else {
+			setTimeout(function(){ 
+			currentPercent1 = 0;
+			},3000);
+		}
+	  
+	  result1.innerHTML = currentPercent1;
+	}, percent_timing); // Runs at a rate based on the animation's
+			// duration (milliseconds / 100)
+}
+
+
+
+function time_bus3(bus3){
+	var showPercent3 = window.setInterval(function() {
+		
+		if(currentPercent3 < 100)
+		{
+			currentPercent3 += 1;
+		}
+		else {
+			setTimeout(function(){ 
+			currentPercent3= 0;
+			},3000);
+		}
+	  
+	  result3.innerHTML = currentPercent3;
+	}, percent_timing); // Runs at a rate based on the animation's
+			// duration (milliseconds / 100)
+}
+
+function time_bus4(bus4){
+	var showPercent4 = window.setInterval(function() {
+		
+		if(currentPercent4 < 100)
+		{
+			currentPercent4 += 1;
+		}
+		else {
+			setTimeout(function(){ 
+			currentPercent4 = 0;
+			},3000);
+		}
+	  
+	  result4.innerHTML = currentPercent4;
+	}, percent_timing); // Runs at a rate based on the animation's
+			// duration (milliseconds / 100)
+}
+
+//--------------------------------Nandan Change---------------------------//
+function time_bus5(bus5){
+	var showPercent5 = window.setInterval(function() {
+		
+		if(currentPercent5 < 100)
+		{
+			currentPercent5 += 1;
+		}
+		else {
+			setTimeout(function(){ 
+			currentPercent5 = 0;
+			},3000);
+		}
+	  
+	  result5.innerHTML = currentPercent5;
+	}, percent_timing); // Runs at a rate based on the animation's
+			// duration (milliseconds / 100)
+}
+
+
+//---------------------Bus6
+function time_bus6(bus6){
+	var showPercent6 = window.setInterval(function() {
+		
+		if(currentPercent6 < 100)
+		{
+			currentPercent6 += 1;
+		}
+		else {
+			setTimeout(function(){ 
+			currentPercent6 = 0;
+			},3000);
+		}
+	  
+	  result6.innerHTML = currentPercent6;
+	}, percent_timing); // Runs at a rate based on the animation's
+			// duration (milliseconds / 100)
+}
+
+
+//---------------------Bus7
+function time_bus7(bus7){
+	var showPercent7 = window.setInterval(function() {
+		
+		if(currentPercent7 < 100)
+		{
+			currentPercent7 += 1;
+		}
+		else {
+			setTimeout(function(){ 
+			currentPercent7 = 0;
+			},3000);
+		}
+	  
+	  result7.innerHTML = currentPercent7;
+	}, percent_timing); // Runs at a rate based on the animation's
+			// duration (milliseconds / 100)
+}
+
+
+//---------------------Bus8
+function time_bus8(bus8){
+	var showPercent8 = window.setInterval(function() {
+		
+		if(currentPercent8 < 100)
+		{
+			currentPercent8 += 1;
+		}
+		else {
+			setTimeout(function(){ 
+			currentPercent8 = 0;
+			},3000);
+		}
+	  
+	  result8.innerHTML = currentPercent8;
+	}, percent_timing); // Runs at a rate based on the animation's
+			// duration (milliseconds / 100)
+}
+
+
+
+//------------------------------------------------Dostuff()--------------------------------------------
+function doStuff1_p2(){
+
+						
+	var box = document.getElementById('append');   
+	if (box.style.WebkitAnimationPlayState == "paused") {
+		box.style.WebkitAnimationPlayState= "running";	
+		currentPercent1=temp_bus1;
+		setTimeout(function () { 
+			change1("example1"); 
+		}, 10);
+		
+		setTimeout(function () { 
+			change2("example2"); 
+		}, 12);
+		
+		setTimeout(function () { 
+			change3("example3"); 
+		}, 14);
+		
+		plotEWT_p2();
+	}
+	else{
+		box.style.WebkitAnimationPlayState = "paused";
+		temp_bus1=currentPercent1;
+	}
+
+
+}
+
+function doStuff2_p2(){
+
+	var box = document.getElementById('append1');   
+	if (box.style.WebkitAnimationPlayState == "paused") {
+		box.style.WebkitAnimationPlayState= "running";
+		currentPercent=temp_bus2;	
+
+		setTimeout(function () { 
+			change2("example2"); 
+		}, 12);
+		
+		setTimeout(function () { 
+			change3("example3"); 
+		}, 14);
+		
+		plotEWT_p2();
+	}
+	else{
+		box.style.WebkitAnimationPlayState = "paused";
+		temp_bus2=currentPercent;
+	}
+
+}
+
+function doStuff3_p2(){
+	var temp3;
+	var box = document.getElementById('append2');   
+	if (box.style.WebkitAnimationPlayState == "paused") {
+		box.style.WebkitAnimationPlayState= "running";
+		currentPercent3=temp_bus3;
+	}
+	else{
+		box.style.WebkitAnimationPlayState = "paused";
+		temp_bus3=currentPercent3;
+		
+		setTimeout(function () { 
+			change3("example3"); 
+		}, 14);
+		
+		plotEWT_p2();
+	}
+
+
+}
+
+
+function doStuff4_p2(){
+	var temp4;
+	var box = document.getElementById('append3');   
+	if (box.style.WebkitAnimationPlayState == "paused") {
+		box.style.WebkitAnimationPlayState= "running";	
+		currentPercent4=temp_bus4;
+	}
+	else{
+		box.style.WebkitAnimationPlayState = "paused";
+		temp_bus4=currentPercent4;
+		setTimeout(function () { 
+			change4("example4"); 
+		}, 14);
+			plotEWT_p2();
+	}
+}
+
+function doStuff5_p2(){
+	var temp5;
+	var box = document.getElementById('append4');   
+	if (box.style.WebkitAnimationPlayState == "paused") {
+		box.style.WebkitAnimationPlayState= "running";	
+		currentPercent5=temp_bus5;
+	}
+	else{
+		box.style.WebkitAnimationPlayState = "paused";
+		temp_bus4=currentPercent4;
+		setTimeout(function () { 
+			change5("example5"); 
+		}, 14);
+			plotEWT_p2();
+	}
+}
+
+function doStuff6_p2(){
+	var temp6;
+	var box = document.getElementById('append5');   
+	if (box.style.WebkitAnimationPlayState == "paused") {
+		box.style.WebkitAnimationPlayState= "running";	
+		currentPercent6=temp_bus6;
+	}
+	else{
+		box.style.WebkitAnimationPlayState = "paused";
+		temp_bus6=currentPercent6;
+		setTimeout(function () { 
+			change6("example6"); 
+		}, 14);
+	}
+}
+
+function doStuff7_p2(){
+	var temp7;
+	var box = document.getElementById('append6');   
+	if (box.style.WebkitAnimationPlayState == "paused") {
+		box.style.WebkitAnimationPlayState= "running";	
+		currentPercent7=temp_bus7;
+	}
+	else{
+		box.style.WebkitAnimationPlayState = "paused";
+		temp_bus7=currentPercent7;
+		setTimeout(function () { 
+			change7("example7"); 
+		}, 14);
+	}
+}
+
+function doStuff8_p2(){
+	var temp8;
+	var box = document.getElementById('append8');   
+	if (box.style.WebkitAnimationPlayState == "paused") {
+		box.style.WebkitAnimationPlayState= "running";	
+		currentPercent8=temp_bus8;
+	}
+	else{
+		box.style.WebkitAnimationPlayState = "paused";
+		temp_bus8=currentPercent8;
+		setTimeout(function () { 
+			change8("example8"); 
+		}, 14);
+	}
+}
+//-------------------Nandan change , update arrival time-----------------------//
+
+function updatearrivaltime_p2(){
+
+	$("#textarea1").val('');
+	$("#textarea2").val('');
+	$("#textarea3").val('');
+
+	
+	for(j=1;j<6;j++)
+	{
+		for(i = 1; i < 5; i++)
+		{			
+			var _temp=document.getElementById("HW"+j+i).innerHTML;
+			document.getElementById(id="textarea"+j).value+="Bus"+i+":"+_temp+("\n");
+			
+		}
+	}
+
+}
+
+// Checks to see if the specified rule is within 
+// any of the stylesheets found in the document;
+// returns the animation object if so
+function findKeyframesRule(rule) {
+    var ss = document.styleSheets;
+    for (var i = 0; i < ss.length; ++i) {
+        for (var j = 0; j < ss[i].cssRules.length; ++j) {
+            if (ss[i].cssRules[j].type == window.CSSRule.WEBKIT_KEYFRAMES_RULE && ss[i].cssRules[j].name == rule) { return ss[i].cssRules[j]; }
+        }
+    }
+    return null;
+};
+
+	
+function change1(anim)
+    {
+	   
+	  var keyframes = findKeyframesRule(anim),
+      length = keyframes.cssRules.length;
+	  
+	  // Makes an array of the current percent values
+  // in the animation
+	var keyframeString = [];  
+	for(var i = 0; i < length; i ++)
+	{
+		keyframeString.push(keyframes[i].keyText);
+	}
+  
+    
+  // Removes all the % values from the array so
+  // the getClosest function can perform calculations
+	var keys = keyframeString.map(function(str) {
+		return str.replace('%', '');
+	});
+  
+  // Updates the current position of the circle to
+  // be used in the calculations
+
+	totalCurrentPercent += currentPercent;
+  //window.alert(currentPercent);
+  if(totalCurrentPercent > 100)
+  {
+    totalCurrentPercent -= 100;
+  }
+  // Self explanatory variables if you read the
+  // description of getClosest
+  var closest = getClosest(keys);
+
+    
+  var position = keys.indexOf(closest), 
+      firstPercent = keys[position+1];
+  
+ 
+  // Nitin Rules here
+  // Shows the bus again
+   var position_bus2 = getPosition(bus2);
+   var position_bus1 = getPosition(bus1);
+   var pause_duration = lineDistance(position_bus1,position_bus2);
+   pause_duration = Math.round(pause_duration/15);
+   
+   var stopping_point;
+   var pause_location;
+   if(currentPercent <14)
+   {	
+		stopping_point = document.getElementById("HW11").innerHTML;
+		pause_location=firstPercent;
+   }
+   else if(currentPercent<28 && currentPercent >14){
+		stopping_point = document.getElementById("HW12").innerHTML;
+		pause_location=firstPercent;
+	}
+	else
+	{
+		stopping_point = document.getElementById("HW13").innerHTML;
+		pause_location=firstPercent;
+	}
+	pause_duration=(Math.abs(stopping_point-pause_duration)*1000);
+	
+	var bus_stop = self.setInterval(function() {
+		if(currentPercent == firstPercent){
+			//alert("2"+pause_duration);;
+			
+			bus2.style.webkitAnimationPlayState = 'paused';
+			var temp= currentPercent;
+			clearInterval(bus_stop)
+			setTimeout(function(){ 
+					bus2.style.webkitAnimationPlayState = 'running';
+					currentPercent=temp;
+					
+					}, pause_duration);
+		}
+	},100);
+
+
+        
+};
+
+
+function change2(anim)
+    {
+	   
+	  var keyframes3 = findKeyframesRule(anim),
+      length3 = keyframes3.cssRules.length;
+	  
+	  // Makes an array of the current percent values
+  // in the animation
+	var keyframeString3 = [];  
+	for(var i = 0; i < length3; i ++)
+	{
+		keyframeString3.push(keyframes3[i].keyText);
+	}
+  
+    
+  // Removes all the % values from the array so
+  // the getClosest function can perform calculations
+	var keys3 = keyframeString3.map(function(str) {
+		return str.replace('%', '');
+	});
+	
+  
+  // Updates the current position of the circle to
+  // be used in the calculations
+
+	totalCurrentPercent3+= currentPercent3;
+  //window.alert(currentPercent);
+  if(totalCurrentPercent3 > 100)
+  {
+    totalCurrentPercent3 -= 100;
+  }
+  // Self explanatory variables if you read the
+  // description of getClosest
+
+  var closest3 = getClosest3(keys3);
+
+
+  var position3 = keys3.indexOf(closest3), 
+      firstPercent3 = keys3[position3+1];
+  
+    
+  // Nitin Rules here
+  // Shows the bus again
+   var position_bus2 = getPosition(bus3);
+   var position_bus1 = getPosition(bus2);
+   var pause_duration3 = lineDistance(position_bus1,position_bus2);
+   pause_duration3 = Math.round(pause_duration3/15);
+   
+   var stopping_point3;
+   var pause_location3;
+   if(currentPercent3 <14)
+   {	
+		stopping_point3 = document.getElementById("HW21").innerHTML;
+		pause_location3=firstPercent3;
+   }
+   else if(currentPercent3<28 && currentPercent3 >14){
+		stopping_point3 = document.getElementById("HW22").innerHTML;
+		pause_location3=firstPercent3;
+	}
+	else
+	{
+		stopping_point3 = document.getElementById("HW23").innerHTML;
+		pause_location3=firstPercent3;
+	}
+	pause_duration3=(Math.abs(stopping_point3-pause_duration3)*1000);
+	//alert(pause_duration3);
+	var bus_stop3 = self.setInterval(function() {
+		if(currentPercent3 == firstPercent3){
+			
+			//alert("3"+pause_duration3);
+			bus3.style.webkitAnimationPlayState = 'paused';
+			var temp3=currentPercent3;
+			clearInterval(bus_stop3)
+			setTimeout(function(){ 
+					bus3.style.webkitAnimationPlayState = 'running';
+					currentPercent3=temp3;
+					
+					}, pause_duration3);
+		}
+	},100);
+
+
+        
+};
+//----------------------------change anim 3
+function change3(anim)
+    {
+	   
+	  var keyframes4 = findKeyframesRule(anim),
+      length4 = keyframes4.cssRules.length;
+	  
+	  // Makes an array of the current percent values
+  // in the animation
+	var keyframeString4 = [];  
+	for(var i = 0; i < length4; i ++)
+	{
+		keyframeString4.push(keyframes4[i].keyText);
+	}
+  
+    
+  // Removes all the % values from the array so
+  // the getClosest function can perform calculations
+	var keys4 = keyframeString4.map(function(str) {
+		return str.replace('%', '');
+	});
+  
+  // Updates the current position of the circle to
+  // be used in the calculations
+
+	totalCurrentPercent4 += currentPercent4;
+  //window.alert(currentPercent);
+  if(totalCurrentPercent4 > 100)
+  {
+    totalCurrentPercent4 -= 100;
+  }
+  // Self explanatory variables if you read the
+  // description of getClosest
+  var closest4 = getClosest4(keys4);
+
+    
+  var position4 = keys4.indexOf(closest4), 
+      firstPercent4 = keys4[position4+1];
+  
+ 
+  // Nitin Rules here
+  // Shows the bus again
+   var position_bus2 = getPosition(bus4);
+   var position_bus1 = getPosition(bus3);
+   var pause_duration4 = lineDistance(position_bus1,position_bus2);
+   pause_duration4 = Math.round(pause_duration4/15);
+   
+   var stopping_point4;
+   var pause_location4;
+   if(currentPercent4 <14)
+   {	
+		stopping_point4 = document.getElementById("HW31").innerHTML;
+		pause_location4=firstPercent4;
+   }
+   else if(currentPercent4<28 && currentPercent4 >14){
+		stopping_point4 = document.getElementById("HW32").innerHTML;
+		pause_location4=firstPercent4;
+	}
+	else
+	{
+		stopping_point4 = document.getElementById("HW33").innerHTML;
+		pause_location4=firstPercent4;
+	}
+	pause_duration4=(Math.abs(stopping_point4-pause_duration4)*1000);
+	
+	var bus_stop4 = self.setInterval(function() {
+		if(currentPercent4 == firstPercent4){
+			//alert("4"+pause_duration4);
+			
+			bus4.style.webkitAnimationPlayState = 'paused';
+			var temp4= currentPercent4;
+			clearInterval(bus_stop4)
+			setTimeout(function(){ 
+					bus4.style.webkitAnimationPlayState = 'running';
+					currentPercent4=temp4;
+					
+					}, pause_duration4);
+		}
+	},100);
+
+
+        
+};
+
+//------------------------------------------------------------change anim4
+function change4(anim)
+    {
+	   
+	  var keyframes5 = findKeyframesRule(anim),
+      length5 = keyframes5.cssRules.length;
+	  
+	  // Makes an array of the current percent values
+  // in the animation
+	var keyframeString5 = [];  
+	for(var i = 0; i < length5; i ++)
+	{
+		keyframeString5.push(keyframes5[i].keyText);
+	}
+  
+    
+  // Removes all the % values from the array so
+  // the getClosest function can perform calculations
+	var keys5 = keyframeString5.map(function(str) {
+		return str.replace('%', '');
+	});
+  
+  // Updates the current position of the circle to
+  // be used in the calculations
+
+	totalCurrentPercent5 += currentPercent4;
+  //window.alert(currentPercent);
+  if(totalCurrentPercent5 > 100)
+  {
+    totalCurrentPercent5 -= 100;
+  }
+  // Self explanatory variables if you read the
+  // description of getClosest
+  var closest5 = getClosest5(keys5);
+
+    
+  var position5 = keys5.indexOf(closest5), 
+      firstPercent5 = keys4[position5+1];
+  
+ 
+  // Nitin Rules here
+  // Shows the bus again
+   var position_bus2 = getPosition(bus4);
+   var position_bus1 = getPosition(bus3);
+   var pause_duration5 = lineDistance(position_bus1,position_bus2);
+   pause_duration5 = Math.round(pause_duration5/15);
+   
+   var stopping_point4;
+   var pause_location4;
+   if(currentPercent4 <14)
+   {	
+		stopping_point4 = document.getElementById("HW31").innerHTML;
+		pause_location4=firstPercent4;
+   }
+   else if(currentPercent4<28 && currentPercent4 >14){
+		stopping_point4 = document.getElementById("HW32").innerHTML;
+		pause_location4=firstPercent4;
+	}
+	else
+	{
+		stopping_point4 = document.getElementById("HW33").innerHTML;
+		pause_location4=firstPercent4;
+	}
+	pause_duration5=(Math.abs(stopping_point4-pause_duration5)*1000);
+	
+	var bus_stop4 = self.setInterval(function() {
+		if(currentPercent4 == firstPercent4){
+			//alert("4"+pause_duration4);
+			
+			bus4.style.webkitAnimationPlayState = 'paused';
+			var temp4= currentPercent4;
+			clearInterval(bus_stop4)
+			setTimeout(function(){ 
+					bus4.style.webkitAnimationPlayState = 'running';
+					currentPercent4=temp4;
+					
+					}, pause_duration5);
+		}
+	},100);
+
+
+        
+};
+
+
+
+//-------------------------------------------------------------------------------------change anim5
+function change5(anim)
+    {
+	   
+	  var keyframes5 = findKeyframesRule(anim),
+      length5 = keyframes5.cssRules.length;
+	  
+	  // Makes an array of the current percent values
+  // in the animation
+	var keyframeString5 = [];  
+	for(var i = 0; i < length5; i ++)
+	{
+		keyframeString5.push(keyframes4[i].keyText);
+	}
+  
+    
+  // Removes all the % values from the array so
+  // the getClosest function can perform calculations
+	var keys5 = keyframeString5.map(function(str) {
+		return str.replace('%', '');
+	});
+  
+  // Updates the current position of the circle to
+  // be used in the calculations
+
+	totalCurrentPercent5 += currentPercent4;
+  //window.alert(currentPercent);
+  if(totalCurrentPercent5 > 100)
+  {
+    totalCurrentPercent5 -= 100;
+  }
+  // Self explanatory variables if you read the
+  // description of getClosest
+  var closest5 = getClosest5(keys5);
+
+    
+  var position5 = keys5.indexOf(closest5), 
+      firstPercent5 = keys4[position5+1];
+  
+ 
+  // Nitin Rules here
+  // Shows the bus again
+   var position_bus2 = getPosition(bus4);
+   var position_bus1 = getPosition(bus3);
+   var pause_duration4 = lineDistance(position_bus1,position_bus2);
+   pause_duration4 = Math.round(pause_duration4/15);
+   
+   var stopping_point4;
+   var pause_location4;
+   if(currentPercent4 <14)
+   {	
+		stopping_point4 = document.getElementById("HW31").innerHTML;
+		pause_location4=firstPercent4;
+   }
+   else if(currentPercent4<28 && currentPercent4 >14){
+		stopping_point4 = document.getElementById("HW32").innerHTML;
+		pause_location4=firstPercent4;
+	}
+	else
+	{
+		stopping_point4 = document.getElementById("HW33").innerHTML;
+		pause_location4=firstPercent4;
+	}
+	pause_duration4=(Math.abs(stopping_point4-pause_duration4)*1000);
+	
+	var bus_stop4 = self.setInterval(function() {
+		if(currentPercent4 == firstPercent4){
+			//alert("4"+pause_duration4);
+			
+			bus4.style.webkitAnimationPlayState = 'paused';
+			var temp4= currentPercent4;
+			clearInterval(bus_stop4)
+			setTimeout(function(){ 
+					bus4.style.webkitAnimationPlayState = 'running';
+					currentPercent4=temp4;
+					
+					}, pause_duration4);
+		}
+	},100);
+
+
+        
+};
+
+
+
+
+//---------------------------------------------------------------------------------change anim over 
+
+
+// begin the new animation process
+function startChange()
+    {
+		
+        // remove the old animation from our object
+      
+		
+		setTimeout(function () { 
+			change1("example1"); 
+		}, 10);
+		
+		setTimeout(function () { 
+			change2("example2"); 
+		}, 12);
+		
+		setTimeout(function () { 
+			change3("example3"); 
+		}, 14);
+			setTimeout(function () { 
+			change4("example4"); 
+		}, 16);
+			setTimeout(function () { 
+			change5("example5"); 
+		}, 18);
+		plotEWT_p2();
+		
+    };
+	
+
+
+// get a random number integer between two low/high extremes
+
+
+
+
+function getPosition(element) {
+    var xPosition = 0;
+    var yPosition = 0;
+  
+    while(element) {
+        xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+        element = element.offsetParent;
+    }
+    return { x: xPosition, y: yPosition };
+};		  
+					  
+function lineDistance( position, position1 )
+{
+  var xs = 0;
+  var ys = 0;
+ 
+  xs = position1.x - position.x;
+  xs = xs * xs;
+ 
+  ys = position1.y - position.y;
+  ys = ys * ys;
+ 
+  return Math.sqrt( xs + ys );
+};		
+
+
+
+function readfile_csv(){
+	$("#textarea1").val('');
+	$("#textarea2").val('');
+	$("#textarea3").val('');
+	if(document.getElementById("tableID")){ 
+			$.get('output.csv', function(data) {
+		 
+			// parse lines
+			var val=1
+			var rows = data.split("\n");
+			rows.forEach( function getvalues(ourrow) {
+		// split line into columns
+				var columns = ourrow.split(",");
+				//html += "<td id=SN>" + columns[0] + "</td>";
+				document.getElementById("HW"+val+1).innerHTML=columns[1];
+				document.getElementById("HW"+val+2).innerHTML=columns[2];
+				document.getElementById("HW"+val+3).innerHTML=columns[3];
+					document.getElementById("HW"+val+3).innerHTML=columns[4];
+						document.getElementById("HW"+val+3).innerHTML=columns[4];
+				//document.getElementById("HW"+val+4).innerHTML=columns[4];
+				//html += "<td id=HW"+val+1+">" + columns[1] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+1+":"+Math.round(columns[1])+("\n");
+				//html += "<td id=HW"+val+2+">" + columns[2] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+2+":"+Math.round(columns[2])+("\n");
+				//html += "<td id=HW"+val+3+">" + columns[3] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+3+":"+Math.round(columns[3])+("\n");
+				document.getElementById(id="textarea"+val).value+="Bus"+4+":"+Math.round(columns[4])+("\n");
+				document.getElementById(id="textarea"+val).value+="Bus"+5+":"+Math.round(columns[5])+("\n");
+				document.getElementById(id="textarea"+val).value+="Bus"+6+":"+Math.round(columns[6])+("\n");
+				document.getElementById(id="textarea"+val).value+="Bus"+7+":"+Math.round(columns[7])+("\n");
+				document.getElementById(id="textarea"+val).value+="Bus"+8+":"+Math.round(columns[8])+("\n");
+				//html += "<td id=HW"+val+4+">" + columns[4] + "</td>";
+				//document.getElementById(id="textarea"+val).value+="Bus"+4+":"+Math.round(columns[4])+("\n");
+
+		// close row
+			val=val+1;
+			
+			})
+
+		// close table
+			
+		 
+		// insert into div
+
+			
+		
+		});
+	}
+	else
+	{
+		$.get('output.csv', function(data) {
+		 
+		// start the table
+
+			var html = "<table id=tableID style=display:none>";
+		 
+		// split into lines
+			var rows = data.split("\n");
+
+		// parse lines
+			var val=1
+			rows.forEach( function getvalues(ourrow) {
+		// start a table row
+				html += "<tr>";
+		 
+		// split line into columns
+				var columns = ourrow.split(",");
+				html += "<td id=SN>" + columns[0] + "</td>";
+				html += "<td id=HW"+val+1+">" + columns[1] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+1+":"+Math.round(columns[1])+("\n");
+				html += "<td id=HW"+val+2+">" + columns[2] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+2+":"+Math.round(columns[2])+("\n");
+				html += "<td id=HW"+val+3+">" + columns[3] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+3+":"+Math.round(columns[3])+("\n");
+				//----------------------Added Nandan ------------------------//
+				html += "<td id=HW"+val+4+">" + columns[4] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+4+":"+Math.round(columns[4])+("\n");
+				html += "<td id=HW"+val+5+">" + columns[5] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+5+":"+Math.round(columns[5])+("\n");
+					html += "<td id=HW"+val+6+">" + columns[6] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+6+":"+Math.round(columns[6])+("\n");
+					html += "<td id=HW"+val+7+">" + columns[7] + "</td>";
+				document.getElementById(id="textarea"+val).value+="Bus"+7+":"+Math.round(columns[7])+("\n");
+
+		// close row
+			val=val+1;
+			html += "</tr>";
+			})
+
+		// close table
+			html += "</table>";
+		 
+		// insert into div
+			$('#container').append(html);
+			
+		
+		});
+	}
+	//startChange(); 
+	
+
+};
+
+
+
+// Gets the animation's closest % value based on
+// the approximated % found below
+function getClosest(keyframe) {
+  var curr = keyframe[0];
+  var diff = Math.abs (totalCurrentPercent - curr);
+  for (var val = 0, j = keyframe.length; val < j; val++) {
+    var newdiff = Math.abs(totalCurrentPercent - keyframe[val]);
+    if (newdiff < diff) {
+      diff = newdiff;
+      curr = keyframe[val];
+     }
+  }
+  return curr;
+};
+
+function getClosest1(keyframe) {
+  var curr = keyframe[0];
+  var diff = Math.abs (totalCurrentPercent1 - curr);
+  for (var val = 0, j = keyframe.length; val < j; val++) {
+    var newdiff = Math.abs(totalCurrentPercent1 - keyframe[val]);
+    if (newdiff < diff) {
+      diff = newdiff;
+      curr = keyframe[val];
+     }
+  }
+  return curr;
+};
+
+function getClosest3(keyframe) {
+  var curr = keyframe[0];
+  var diff = Math.abs (totalCurrentPercent3 - curr);
+  for (var val = 0, j = keyframe.length; val < j; val++) {
+    var newdiff = Math.abs(totalCurrentPercent3 - keyframe[val]);
+    if (newdiff < diff) {
+      diff = newdiff;
+      curr = keyframe[val];
+     }
+  }
+  return curr;
+};
+
+function getClosest4(keyframe) {
+  var curr = keyframe[0];
+  var diff = Math.abs (totalCurrentPercent4 - curr);
+  for (var val = 0, j = keyframe.length; val < j; val++) {
+    var newdiff = Math.abs(totalCurrentPercent4 - keyframe[val]);
+    if (newdiff < diff) {
+      diff = newdiff;
+      curr = keyframe[val];
+     }
+  }
+  return curr;
+};
+//----------------------------------------Added Nandan
+function getClosest5(keyframe) {
+  var curr = keyframe[0];
+  var diff = Math.abs (totalCurrentPercent5 - curr);
+  for (var val = 0, j = keyframe.length; val < j; val++) {
+    var newdiff = Math.abs(totalCurrentPercent5 - keyframe[val]);
+    if (newdiff < diff) {
+      diff = newdiff;
+      curr = keyframe[val];
+     }
+  }
+  return curr;
+};
+
+function getClosest6(keyframe) {
+  var curr = keyframe[0];
+  var diff = Math.abs (totalCurrentPercent6 - curr);
+  for (var val = 0, j = keyframe.length; val < j; val++) {
+    var newdiff = Math.abs(totalCurrentPercent6 - keyframe[val]);
+    if (newdiff < diff) {
+      diff = newdiff;
+      curr = keyframe[val];
+     }
+  }
+  return curr;
+};
+
+
+function getClosest7(keyframe) {
+  var curr = keyframe[0];
+  var diff = Math.abs (totalCurrentPercent7 - curr);
+  for (var val = 0, j = keyframe.length; val < j; val++) {
+    var newdiff = Math.abs(totalCurrentPercent7 - keyframe[val]);
+    if (newdiff < diff) {
+      diff = newdiff;
+      curr = keyframe[val];
+     }
+  }
+  return curr;
+};
+
+function plotEWT_p2() {
+
+	var table = document.getElementById("myTable");
+   var HW1;
+   var HW2;
+   var HW3;
+   var HW4;
+     var HW5;
+	 var HW6;
+	 var HW6;
+   var AWT = [];
+   var value = 7.5;
+	for (i= 0;i<3;i++)
+	{		
+		 HW1= parseInt(tableID.rows[i].cells[1].innerHTML);
+		 HW2= parseInt(tableID.rows[i].cells[2].innerHTML);
+		 HW3= parseInt(tableID.rows[i].cells[3].innerHTML);
+		 HW4= parseInt(tableID.rows[i].cells[4].innerHTML);
+		  // HW4= parseInt(tableID.rows[i].cells[4].innerHTML);
+		 AWT[i]= Math.pow(HW1, 2)+Math.pow(HW2, 2)+Math.pow(HW3, 2);
+		 AWT[i]=AWT[i]/(HW1+HW2+HW3);
+		 //AWT[i]=(0.5*AWT[i])-value;
+		 AWT[i]=(0.5*AWT[i]);
+	}
+	
+	
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		animationEnabled: true,
+		title:{
+			text: "EWT with REFLEX Optimization"
+		},
+		axisX:{
+		title: "Bus Stop Number",
+		interval:1
+		},
+		axisY:{
+		title: "Average Waiting Time",
+		interval:2,
+		maximum:10
+		},
+	 
+		data: [
+		{
+			type: "column", //change type to bar, line, area, pie, etc
+			dataPoints: [
+				{ x: 1, y: AWT[0] },
+				{ x: 2, y: AWT[1] },
+				{ x: 3, y: AWT[2] },
+				{ x: 4, y: AWT[3] },//------------nandan Added
+				{ x: 5, y: AWT[4] },
+				{ x: 6, y: AWT[5] },
+				{ x: 7, y: AWT[6] },
+				{ x: 8, y: AWT[7] },
+			]
+		}
+		]
+	});
+	
+	chart.render();
+
+};
+
+
+
+
+function topspeed1(){
+var topspeed =  document.getElementById("append");
+if(topspeed.style.WebkitAnimationDuration == "90s"){
+topspeed.style.WebkitAnimationDuration = "180s";
+percent_timing=1755;
+currentPercent1=Math.round(currentPercent1/2);
+
+
+}
+else
+{
+topspeed.style.WebkitAnimationDuration = "90s";
+percent_timing=877;
+currentPercent1=currentPercent1*2;
+
+}
+
+};
+
+
+function topspeed2(){
+var topspeed2 =  document.getElementById("append1");
+if(topspeed2.style.WebkitAnimationDuration == "90s"){
+topspeed2.style.WebkitAnimationDuration = "180s";
+percent_timing=1755;
+currentPercent=Math.round(currentPercent/2);
+
+
+}
+else
+{
+topspeed2.style.WebkitAnimationDuration = "90s";
+percent_timing=877;
+currentPercent=currentPercent*2;
+
+}
+
+};
+
+
+function topspeed3(){
+var topspeed3 =  document.getElementById("append2");
+if(topspeed3.style.WebkitAnimationDuration == "90s"){
+topspeed3.style.WebkitAnimationDuration = "180s";
+percent_timing=1755;
+currentPercent3=Math.round(currentPercent3/2);
+
+
+}
+else
+{
+topspeed3.style.WebkitAnimationDuration = "90s";
+percent_timing=877;
+currentPercent3=currentPercent3*2;
+
+}
+
+};
+
+
+
+function topspeed4(){
+var topspeed4 =  document.getElementById("append3");
+if(topspeed4.style.WebkitAnimationDuration == "90s"){
+topspeed4.style.WebkitAnimationDuration = "180s";
+percent_timing=1755;
+currentPercent4=Math.round(currentPercent4/2);
+
+
+}
+else
+{
+topspeed4.style.WebkitAnimationDuration = "90s";
+percent_timing=877;
+currentPercent4=currentPercent4*2;
+
+
+}
+};
+function topspeed5(){
+var topspeed5 =  document.getElementById("append4");
+if(topspeed5.style.WebkitAnimationDuration == "90s"){
+topspeed5.style.WebkitAnimationDuration = "180s";
+percent_timing=1755;
+currentPercent5=Math.round(currentPercent5/2);
+
+
+}
+else
+{
+topspeed5.style.WebkitAnimationDuration = "90s";
+percent_timing=877;
+currentPercent5=currentPercent5*2;
+
+
+}
+};
+
+
+function topspeed6(){
+var topspeed6 =  document.getElementById("append5");
+if(topspeed6.style.WebkitAnimationDuration == "90s"){
+topspeed6.style.WebkitAnimationDuration = "180s";
+percent_timing=1755;
+currentPercent5=Math.round(currentPercent6/2);
+
+
+}
+else
+{
+topspeed6.style.WebkitAnimationDuration = "90s";
+percent_timing=877;
+currentPercent6=currentPercent4*2;
+
+
+}
+};
+
+
+
+function thop2()
+
+{
+
+
+topspeed1();
+topspeed2();
+topspeed3();
+topspeed4();
+topspeed5();
+topspeed6();
+
+
+
+};
+  function toggle1() {
+            if (document.getElementById("textarea1").style.display == 'none') {
+                document.getElementById("textarea1").style.display = 'block';
+            } else {
+                document.getElementById("textarea1").style.display = 'none';
+            }
+        };
+		
+		function toggle2(){
+            if (document.getElementById("textarea2").style.display == 'none') {
+                document.getElementById("textarea2").style.display = 'block';
+            } else {
+                document.getElementById("textarea2").style.display = 'none';
+            }
+        };
+		
+		function toggle3() {
+            if (document.getElementById("textarea3").style.display == 'none') {
+                document.getElementById("textarea3").style.display = 'block';
+            } else {
+                document.getElementById("textarea3").style.display = 'none';
+            }
+        };
+function toggleq(){
+
+
+toggle2();
+toggle3();
+toggle1();
+
+};
+
+
+</script>
+
+
+<textarea name='wktResult' id="textarea1" ></textarea>
+<textarea name='wktResult2' id="textarea2"></textarea>
+<textarea name='wktResult3' id="textarea3"></textarea>
+<div id="chartContainer" style="height: 200px; width: 30%;"></div>
+<div style="position: absolute; right: 70px; bottom: 50px;"> 
+<img src="REFLEX.jpg" alt="HTML5 Icon" style="width:200px;height:128px;">
+</div> 
+
+
+
+
+</body>
+</html>

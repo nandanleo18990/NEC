@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<body >
+<div class= "wrapper">
+Change Speed :
+<input type="button" id="speed_button" value="90s" onclick="thop_main()" > 
+
+
+<input type="button" value="Reload"  onclick="refresh1()" >
+
+
+
+<input type="button" id="toggle_button"value="Hide" onclick="change_display()" />
+</div>
+
+
+<style>
+
+
+body{
+
+background-color : yellow;
+
+}
+#toggle{
+
+float:right;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+</style>
+
+<script>
+
+
+function refresh1(){
+window.top.location.reload();
+
+};
+
+
+ 
+//-------------------------------Nandan Changes speed in 1 and 3 (90 and 180)--------------------//
+function thop_main(){
+
+
+top.frames.name1.thop();
+top.frames.name2.thop2();
+changespeed_display();
+
+};
+//-------------------------------Nandan Hides and displays the textarea-------------------//
+
+function display_hide(){
+
+
+top.frames.name1.toggle();
+top.frames.name2.toggleq();
+
+
+};
+
+//------------ change spedd function----------------------//
+function changespeed_display() {
+                 var elem = document.getElementById("speed_button");
+                if (elem.value=="90s")
+                    { 
+                        elem.value = "180s";
+                    }
+                else
+                 {
+                     elem.value = "90s";
+                 }
+            };
+function changetext() {
+                 var elem = document.getElementById("toggle_button");
+                if (elem.value=="Hide")
+                    { 
+                        elem.value = "Display";
+                    }
+                else
+                 {
+                     elem.value = "Hide";
+                 }
+            };
+			
+			function display(){
+			
+			
+			
+						
+			}
+			function change_display(){
+			
+			
+			display_hide();
+			changetext() ;
+			
+			}
+ </script>
+
+</body>
+
+</script>
+
+</html>
